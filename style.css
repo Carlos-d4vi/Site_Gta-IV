@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins";
+    height: 100vh;
+}
+
+header{
+    background-color: rgb(24, 44, 97);
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    text-decoration: none;
+    padding: 24px;
+    margin-bottom: 16px;
+}
+
+.container{
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav, nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 16px;
+    list-style: none;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+section .container{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+section .container img{
+    height: 450px;
+    margin-right: 32px;
+}
+
+.image-container{
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img{
+    display: block;
+    height: auto;
+}
+
+.image-container p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+    color: #FFF;
+    font-size: 30px;
+}
+
+.image-container:hover p{
+    opacity: 1;
+}
+
+.image-container:hover{
+    filter: brightness(70%);
+}
+
+section .container h2{
+    margin-bottom: 16px;
+}
+
+time{
+    font-size: small;
+    color: #9e9b9b;
+}
+
+.logos li{
+    list-style: none;
+}
+
+.logos li img{
+    max-height: 30px;
+}
+
+
+#contact{
+    margin: 40px;
+}
+
+.contact-methods{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-methods h3{
+    margin: 16px 0;
+}
+
+#contact .container{
+    display: block;
+}
+
+form{
+    display: block;
+    font-family: "Poppins";
+}
+
+form input, textarea, button{
+    display: block;
+    width: 320px;
+    margin: 8px 0px;
+    padding: 8px;
+
+}
+
+textarea{
+    height: 180px;
+}
+
+button{
+    background-color: rgb(24, 44, 97);
+    color: #FFF;
+    border: none;
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+button:hover{
+    background-color: rgb(37, 68, 155);
+}
+
+
+footer{
+    background-color: rgb(24, 44, 97);
+    color: #FFF;
+    padding: 24.5px;
+}
+
+footer .container{
+    display: flex;
+}
